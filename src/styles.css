@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  background-color: rgb(196, 192, 192);
+  color: white;
+}
+.insta {
+  padding-top: 1.5%;
+  background-color: aliceblue;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.top {
+  display: flex;
+}
+.lefttop {
+  text-align: left;
+  padding-left: 3%;
+  width: 50%;
+  padding-top: 2%;
+  color: gray;
+}
+.righttop {
+  text-align: right;
+  padding-right: 4%;
+  padding-top: 4%;
+
+  align-self: right;
+  width: 50%;
+  display: flex-box;
+}
+.leftbt {
+  text-align: left;
+  padding-left: 3%;
+  width: 50%;
+  padding-top: 2%;
+}
+.rightbt {
+  text-align: right;
+  padding-right: 3%;
+  padding-top: 2%;
+
+  align-self: right;
+  width: 50%;
+  display: flex-box;
+}
+span {
+  padding-right: 2%;
+}
+.btm {
+  display: flex;
+}
+.type {
+  font-size: 11px;
+  text-align: left;
+  padding-left: 3%;
+}
+input {
+  border: none;
+  padding-bottom: 2%;
+  color: gray;
+}
+.bottom {
+  color: gray;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.twit{
+ padding-top: 1.5%;
+  background-color: aliceblue;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+   padding-bottom: 1.5%;
+}
+.top{
+padding-top:5%;
+}
+.twit .type{
+padding-left:50px;
+padding-right:30px;
+}
+.twit .btm{
+
+align-items:center;
+display:flex;
+justify-content:center;
+
+}
+.twit span{
+font-size:10px;
+padding-left:4px;
+padding-right:10%;
+}

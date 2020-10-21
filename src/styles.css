@@ -8,8 +8,11 @@
   text-align: center;
 }
 .header {
-  background-color: rgb(196, 192, 192);
+  background-color: rgb(119, 119, 255);
   color: white;
+}
+#vvv {
+  margin-left: -10%;
 }
 .insta {
   padding-top: 1.5%;
@@ -76,31 +79,29 @@ input {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.twit{
- padding-top: 1.5%;
+.twit {
+  padding-top: 1.5%;
   background-color: aliceblue;
   align-content: center;
   justify-content: center;
   align-items: center;
   display: flex;
-   padding-bottom: 1.5%;
+  padding-bottom: 1.5%;
 }
-.top{
-padding-top:5%;
+.top {
+  padding-top: 5%;
 }
-.twit .type{
-padding-left:50px;
-padding-right:30px;
+.twit .type {
+  padding-left: 50px;
+  padding-right: 30px;
 }
-.twit .btm{
-
-align-items:center;
-display:flex;
-justify-content:center;
-
+.twit .btm {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-.twit span{
-font-size:10px;
-padding-left:4px;
-padding-right:10%;
+.twit span {
+  font-size: 10px;
+  padding-left: 4px;
+  padding-right: 10%;
 }

@@ -26,13 +26,42 @@ const useStyles = makeStyles({
 });
 
 export default function ImgMediaCard() {
-  var [follow, setflw] = useState(0);
-  var [like, setlike] = useState(0);
+  var [follow, setflw] = useState(100);
+  var [like, setlike] = useState(36);
+  let [l, setl] = useState(0);
+  let [fc, setfc] = useState(0);
+  let [j, setj] = useState(<FavoriteBorderIcon style={{ fontSize: "20px" }} />);
+  let [f, setf] = useState(<RepeatIcon style={{ fontSize: "20px" }} />);
   function followed() {
-    setflw(1);
+    if (!fc) {
+      setf(
+        <RepeatIcon
+          style={{ color: " rgb(119, 119, 255)", fontSize: "20px" }}
+        />
+      );
+      setfc(1);
+      setflw(follow + 1);
+    } else {
+      setf(<RepeatIcon style={{ fontSize: "20px" }} />);
+      setfc(0);
+      setflw(follow - 1);
+    }
   }
+
   function liked() {
-    setlike(1);
+    if (!l) {
+      setj(
+        <FavoriteIcon
+          style={{ color: "rgb(235, 109, 109)", fontSize: "20px" }}
+        />
+      );
+      setl(1);
+      setlike(like + 1);
+    } else {
+      setj(<FavoriteBorderIcon style={{ fontSize: "20px" }} />);
+      setl(0);
+      setlike(like - 1);
+    }
   }
   return (
     <div className="twit">
@@ -60,15 +89,15 @@ export default function ImgMediaCard() {
             <div className="btm">
               <ChatBubbleOutlineOutlinedIcon style={{ fontSize: "20px" }} />
               <span>37</span>
-              <RepeatIcon style={{ fontSize: "20px" }} onClick={followed} />
-              <span>{follow}</span>
-              <FavoriteBorderIcon
-                style={{ fontSize: "20px" }}
-                onClick={liked}
-              />
-              <span>{like}</span>
+              <span onClick={followed}>{f}</span>
+
+              <span id="vvv">{follow}</span>
+              <span id="like" onClick={liked}>
+                {j}
+              </span>
+              <span id="vvv">{like}</span>
+
               <ArrowUpwardOutlinedIcon style={{ fontSize: "20px" }} />
-              <span></span>
             </div>
           </Typography>
         </Typography>

@@ -26,10 +26,17 @@ var k = "Add a Comment...";
 
 export default function ImgMediaCard() {
   let [j, setj] = useState(<FavoriteBorderIcon />);
+  let [l, setl] = useState(0);
   let [sa, setsa] = useState(<TurnedInNotOutlinedIcon />);
   const classes = useStyles();
   function liked() {
-    setj(<FavoriteIcon />);
+    if (!l) {
+      setj(<FavoriteIcon style={{ color: "rgb(235, 109, 109)" }} />);
+      setl(1);
+    } else {
+      setj(<FavoriteBorderIcon />);
+      setl(0);
+    }
   }
   function saved() {
     setsa(<TurnedInOutlinedIcon />);
@@ -79,7 +86,7 @@ export default function ImgMediaCard() {
           </Typography>
           <Typography>
             <div className="type">
-              <b>3773 likes</b>
+              <b>3.7M likes</b>
               <br />
               Hey there everyone I'm Yash Babiya !!
             </div>
